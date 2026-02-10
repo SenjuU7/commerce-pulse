@@ -1,0 +1,14 @@
+[package]
+name = "data_enginee"
+version = "0.1.0"
+edition = "2024"
+
+[dependencies]
+anyhow = "1.0.101"
+chrono = "0.4.43"
+csv = "1.4.0"
+dotenv = "0.15.0"
+rust_decimal = { version = "1.40.0", features = ["db-tokio-postgres"] }
+serde = { version = "1.0.228", features = ["derive"] }
+tokio = { version = "1.49.0", features = ["full"] }
+tokio-postgres = { version = "0.7.16", features = ["with-chrono-0_4"] }
